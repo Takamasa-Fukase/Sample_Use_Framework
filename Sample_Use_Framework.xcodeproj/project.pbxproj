@@ -16,6 +16,8 @@
 		BCDBD8352D088DD600615A94 /* Sample_Use_FrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBD8342D088DD600615A94 /* Sample_Use_FrameworkTests.swift */; };
 		BCDBD83F2D088DD600615A94 /* Sample_Use_FrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBD83E2D088DD600615A94 /* Sample_Use_FrameworkUITests.swift */; };
 		BCDBD8412D088DD600615A94 /* Sample_Use_FrameworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBD8402D088DD600615A94 /* Sample_Use_FrameworkUITestsLaunchTests.swift */; };
+		BCDBD84F2D088E6400615A94 /* Sample_Framework_A.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBD84E2D088E6400615A94 /* Sample_Framework_A.xcframework */; };
+		BCDBD8502D088E6400615A94 /* Sample_Framework_A.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBD84E2D088E6400615A94 /* Sample_Framework_A.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BCDBD8512D088E6400615A94 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BCDBD8502D088E6400615A94 /* Sample_Framework_A.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BCDBD81A2D088DD400615A94 /* Sample_Use_Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample_Use_Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDBD81D2D088DD400615A94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		BCDBD83A2D088DD600615A94 /* Sample_Use_FrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sample_Use_FrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDBD83E2D088DD600615A94 /* Sample_Use_FrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_Use_FrameworkUITests.swift; sourceTree = "<group>"; };
 		BCDBD8402D088DD600615A94 /* Sample_Use_FrameworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_Use_FrameworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCDBD84E2D088E6400615A94 /* Sample_Framework_A.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sample_Framework_A.xcframework; path = ../Sample_Framework_A/build/Sample_Framework_A.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDBD84F2D088E6400615A94 /* Sample_Framework_A.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,7 @@
 				BCDBD8332D088DD600615A94 /* Sample_Use_FrameworkTests */,
 				BCDBD83D2D088DD600615A94 /* Sample_Use_FrameworkUITests */,
 				BCDBD81B2D088DD400615A94 /* Products */,
+				BCDBD84D2D088E6400615A94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +146,14 @@
 			path = Sample_Use_FrameworkUITests;
 			sourceTree = "<group>";
 		};
+		BCDBD84D2D088E6400615A94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBD84E2D088E6400615A94 /* Sample_Framework_A.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +164,7 @@
 				BCDBD8162D088DD400615A94 /* Sources */,
 				BCDBD8172D088DD400615A94 /* Frameworks */,
 				BCDBD8182D088DD400615A94 /* Resources */,
+				BCDBD8512D088E6400615A94 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

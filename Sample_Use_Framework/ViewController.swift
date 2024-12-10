@@ -6,14 +6,16 @@
 //
 
 import UIKit
+import Sample_Framework_A
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func openFrameworkA_VCButtonTapped(_ sender: Any) {
+        SampleFrameworkA().presentSampleA_VC(on: self)
+    }
 }
 
