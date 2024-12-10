@@ -18,7 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         imageDisplayView = ImageDisplayView(frame: view.frame)
-        view.addSubview(imageDisplayView)
+        frameworkB_BaseView.addSubview(imageDisplayView)
+        frameworkB_BaseView.addConstraints(for: imageDisplayView)
     }
     
     @IBAction func openFrameworkA_VCButtonTapped(_ sender: Any) {
