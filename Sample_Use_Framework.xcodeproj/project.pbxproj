@@ -53,7 +53,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BC552BAC2D089CAC00E343FD /* Sample_Framework_B.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sample_Framework_B.xcframework; path = ../Sample_Framework_B/build/Sample_Framework_B.xcframework; sourceTree = "<group>"; };
 		BC552BB82D08A0FC00E343FD /* UIView+Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
 		BCDBD81A2D088DD400615A94 /* Sample_Use_Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample_Use_Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDBD81D2D088DD400615A94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,7 +152,6 @@
 		BCDBD84D2D088E6400615A94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BC552BAC2D089CAC00E343FD /* Sample_Framework_B.xcframework */,
 				BCDBD84E2D088E6400615A94 /* Sample_Framework_A.xcframework */,
 			);
 			name = Frameworks;
