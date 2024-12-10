@@ -17,7 +17,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openFrameworkA_VCButtonTapped(_ sender: Any) {
-        SampleFrameworkA().presentSampleA_VC(on: self)
+        let fwA = SampleFrameworkA()
+        fwA.presentSampleA_VC(on: self)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+            fwA.updateImage()
+        })
     }
     
     @IBAction func changeImageButtonTapped(_ sender: Any) {
