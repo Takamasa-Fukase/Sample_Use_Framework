@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		BC552BAF2D089F2000E343FD /* Sample_Framework_A.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBD84E2D088E6400615A94 /* Sample_Framework_A.xcframework */; };
 		BC552BB02D089F2000E343FD /* Sample_Framework_A.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBD84E2D088E6400615A94 /* Sample_Framework_A.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BC552BB62D08A0B300E343FD /* Sample_Framework_B.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC552BAC2D089CAC00E343FD /* Sample_Framework_B.xcframework */; };
-		BC552BB72D08A0B300E343FD /* Sample_Framework_B.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC552BAC2D089CAC00E343FD /* Sample_Framework_B.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BC552BB92D08A0FC00E343FD /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC552BB82D08A0FC00E343FD /* UIView+Constraint.swift */; };
 		BCDBD81E2D088DD400615A94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBD81D2D088DD400615A94 /* AppDelegate.swift */; };
 		BCDBD8202D088DD400615A94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBD81F2D088DD400615A94 /* SceneDelegate.swift */; };
@@ -48,7 +46,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BC552BB02D089F2000E343FD /* Sample_Framework_A.xcframework in Embed Frameworks */,
-				BC552BB72D08A0B300E343FD /* Sample_Framework_B.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,7 +77,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC552BAF2D089F2000E343FD /* Sample_Framework_A.xcframework in Frameworks */,
-				BC552BB62D08A0B300E343FD /* Sample_Framework_B.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
