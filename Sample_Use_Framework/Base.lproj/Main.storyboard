@@ -17,21 +17,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNo-Gs-Z3c">
-                                <rect key="frame" x="95.666666666666686" y="408.66666666666669" width="202" height="35"/>
+                                <rect key="frame" x="95.666666666666686" y="119" width="202" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="FrameworkAを呼び出し"/>
                                 <connections>
                                     <action selector="openFrameworkA_VCButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TzH-9S-EpQ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhz-rx-12m">
+                                <rect key="frame" x="32" y="214" width="329" height="480"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="hFr-a6-cAg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pa2-4F-z5r">
+                                <rect key="frame" x="133" y="710" width="127" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="UpdateImage"/>
+                                <connections>
+                                    <action selector="changeImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C57-va-gtR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Pa2-4F-z5r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6F5-CC-FTy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mhz-rx-12m" secondAttribute="trailing" constant="32" id="ALA-S0-MN1"/>
+                            <constraint firstItem="Mhz-rx-12m" firstAttribute="top" secondItem="SNo-Gs-Z3c" secondAttribute="bottom" constant="60" id="Cyp-ws-avi"/>
                             <constraint firstItem="SNo-Gs-Z3c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DBk-Y0-dPl"/>
-                            <constraint firstItem="SNo-Gs-Z3c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q2q-LN-Wv0"/>
+                            <constraint firstItem="Pa2-4F-z5r" firstAttribute="top" secondItem="Mhz-rx-12m" secondAttribute="bottom" constant="16" id="EOG-4Z-8Mh"/>
+                            <constraint firstItem="Mhz-rx-12m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="NEJ-dZ-yTR"/>
+                            <constraint firstItem="SNo-Gs-Z3c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="qGa-To-B86"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="frameworkB_BaseView" destination="Mhz-rx-12m" id="sRJ-bv-eue"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,6 +64,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
