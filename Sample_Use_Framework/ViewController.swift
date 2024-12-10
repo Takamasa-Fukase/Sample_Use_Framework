@@ -7,19 +7,13 @@
 
 import UIKit
 import Sample_Framework_A
-//import Sample_Framework_B
 
 class ViewController: UIViewController {
-    var imageDisplayView: ImageDisplayView!
 
     @IBOutlet weak var frameworkB_BaseView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        imageDisplayView = ImageDisplayView(frame: view.frame)
-//        frameworkB_BaseView.addSubview(imageDisplayView)
-//        frameworkB_BaseView.addConstraints(for: imageDisplayView)
     }
     
     @IBAction func openFrameworkA_VCButtonTapped(_ sender: Any) {
@@ -27,7 +21,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func changeImageButtonTapped(_ sender: Any) {
-//        imageDisplayView.updateImage()
+        
     }
 }
 
